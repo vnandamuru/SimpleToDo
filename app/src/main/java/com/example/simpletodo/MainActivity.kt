@@ -1,11 +1,13 @@
 package com.example.simpletodo
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.FileUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.io.File
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val onLongClickListener = object : TaskItemAdapter.OnLongClickListener{
+            @SuppressLint("NotifyDataSetChanged")
             override fun onItemLongClicked(position: Int) {
                 //REMOVE ITEMS FROM LISTS
                 listOfTasks.removeAt(position)
@@ -54,14 +57,25 @@ class MainActivity : AppCompatActivity() {
             //Log.i("Kittu","Clicked a button")
             val userInputtedTask = inputTextField.text.toString()
 
-            listOfTasks.add(userInputtedTask)
+            if(userInputtedTask.isEmpty())
+            {
+                Toast.makeText(applicationContext, "Please provide a valid entry", Toast.LENGTH_SHORT).show()
+            }
 
-            //Notify the adapter that data has been updated
-            adapter.notifyItemInserted(listOfTasks.size - 1)
+            else
+            {
+                listOfTasks.add(userInputtedTask)
 
-            inputTextField.setText("")
+                //Notify the adapter that data has been updated
+                adapter.notifyItemInserted(listOfTasks.size - 1)
 
-            saveItems()
+                inputTextField.setText("")
+
+                saveItems()
+
+            }
+
+
         }
 
     }
