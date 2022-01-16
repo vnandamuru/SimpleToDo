@@ -19,7 +19,7 @@ The following functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![grab-landing-page](https://github.com/vnandamuru/SimpleToDo/blob/master/Android%20GIF%20Submission%20-%20Imgur.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
