@@ -19,13 +19,11 @@ The following functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-![grab-landing-page](https://github.com/vnandamuru/SimpleToDo/blob/master/Android%20GIF%20Submission%20-%20Imgur.gif)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src="https://github.com/vnandamuru/SimpleToDo/blob/master/Android%20GIF%20Submission%20-%20Imgur.gif" width="250" height="490"/>
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Using Kotlin for the first time was a bit challenging. However, was able to complete the app as Kotlin is similar to JAVA in syntax.
 
 ## License
 
