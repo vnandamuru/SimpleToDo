@@ -10,10 +10,10 @@ Time spent: 8 hours spent in total
 
 The following functionality is completed:
 
-* [ ] User can **view a list of todo items**
-* [ ] User can **successfully add and remove items** from the todo list
-* [ ] User's **list of items persisted** upon modification and and retrieved properly on app restart
-* [ ] Empty strings if added, gives a toast message asking the user to enter the valid to do item
+* [x] User can **view a list of todo items**
+* [x] User can **successfully add and remove items** from the todo list
+* [x] User's **list of items persisted** upon modification and and retrieved properly on app restart
+* [x] Empty strings if added, gives a toast message asking the user to enter the valid to do item
 
 ## Video Walkthrough
 
